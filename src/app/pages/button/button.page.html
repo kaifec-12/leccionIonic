@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title>button</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content [fullscreen]="true">
-    <ion-header collapse="condense">
-      <ion-toolbar>
-        <ion-title size="large">button</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      
+      <ion-title>Botones</ion-title>
+     
+      <ion-buttons slot="end">
+        <ion-button  color="Primary">
+          <ion-icon name="heart"></ion-icon>
+        </ion-button>
+       
+        <ion-button  color="Primary">
+          <ion-icon name="star"></ion-icon>
+        </ion-button>
+      
+      </ion-buttons>
+    
+    
       </ion-toolbar>
-    </ion-header>
+  </ion-header>
+
+  <ion-content padding>
+    
+    
+    <!--Botones normales-->
+    <ion-button>Small</ion-button>
+    <ion-button>Default</ion-button>
+    <ion-button>Large</ion-button>
+
+    <!--Anchor-->
+    <ion-button class="top-20" expand="full" routerLink="/alert" color="tertiary">
+      Ir a pagina Alerta
+    </ion-button>
   </ion-content>
-<ion-button>Default</ion-button>
-<ion-button fill="clear">Clear</ion-button>
-<ion-button fill="outline">Outline</ion-button>
-<ion-button fill="solid">Solid</ion-button>

@@ -17,11 +17,13 @@ this.presentActionSheet();
 async presentActionSheet() {
 const actionSheet = await this.actionSheetCtrl.create({
 header: 'Albumnes',
+backdropDismiss: false, //significa que no se puede cerrar, cunado se hace clic afuera del entorno
 cssClass: 'my-custom-class',
 buttons: [{
 text: 'Delete',
 role: 'destructive',
 icon: 'trash-outline',
+cssClass: 'rojo',
 id: 'delete-button',
 data: {
 type: 'delete'
